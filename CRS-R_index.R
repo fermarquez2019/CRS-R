@@ -45,4 +45,4 @@ for (i in 1:length(demo_pat$RB)){
   demo_pat$MS_value[i] = MSmatrix[demo_pat$index_rb[i], demo_pat$index_cmb[i]]
 }
 
-demo_pat$CRS-R_MS2 = demo_pat$MS_value + demo_pat$ArousalMS
+demo_pat$CRS-R_index = demo_pat$MS_value + demo_pat$ArousalMS
