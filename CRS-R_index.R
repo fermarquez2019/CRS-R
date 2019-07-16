@@ -34,7 +34,7 @@ OromotorCMB = ifelse(demo_pat$bestCRS_oromotor_verbal < 3, 0, demo_pat$bestCRS_o
 demo_pat$ArousalMS = with(demo_pat, ifelse(Eveil.3 %in% c(1), 1, ifelse(Eveil.2 %in% c(1), 2/3, ifelse(Eveil.1 %in% c(1), 1/3, 0))))
 
 demo_pat$RB = with(demo_pat, AuditoryRB + VisualRB + MotorRB + OromotorRB)/7
-demo_pat$CMB = with(demo_pat, AuditoryCMB + VisualCMB + MotorCMB + OromotorCMB + CommunicationCMB)/11
+demo_pat$CMB = with(demo_pat, AuditoryCMB + VisualCMB + MotorCMB + OromotorCMB)/11
 
 demo_pat$index_rb = 0
 demo_pat$index_cmb = 0
